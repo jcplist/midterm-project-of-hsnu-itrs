@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>連4</title>
+	<link rel="icon" href="../sources/favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="../sources/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="../sources/bootstrap.min.css">
+	<script src="../sources/jquery-3.3.1.slim.min.js"></script>
+	<script src="../sources/popper.min.js"></script>
+	<script src="../sources/bootstrap.min.js"></script>
+	<script src="../sources/sweetalert.min.js"></script>
+	<style>
+		.table-bordered td{
+			width:80px;
+			height:80px;
+			border-color:#3232329e;
+			vertical-align:middle;
+		}
+	</style>
+</head>
+<body style="font-family:Microsoft JhengHei;text-align:center;">
+	<h4 style="margin:50px;">
+		連4
+	</h4>
+	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="margin-bottom:30px;">
+		遊戲說明
+	</button>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel" style="text-align:left;">遊戲說明</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<p>這個遊戲是由網頁語言 HTML、CSS、JavaScript 編寫而成的。</p>
+					<p>然後這遊戲是雙人版的(你可以逼解說員跟你一起玩)</p>
+					<p>遊戲規則如下：</p>
+					<ul>
+						<li>
+							"O"、"X"均由每行的下方開始堆疊
+						</li>
+						<li>
+							兩人輪流放置"O"、"X"
+						</li>
+						<li>
+							只要直的橫的斜的連到四就贏了
+						</li>
+						<li>
+							要重玩就重新整理 or 按 enter 鍵
+						</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<p style="text-align: left;margin:auto;margin-left: 0;">by ♥Peach</p>
+					<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="position:absolute;left:50%">
+	<div style="position:relative;right:50%">
+	<table class="table table-bordered">
+		<tbody>
+			
+		</tbody>
+	</table>
+	</div>
+	</div>
+</body>
+<script src="main.js"></script>
+</html>
